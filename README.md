@@ -385,6 +385,26 @@ $ man find
 man man
 ```
 
+## You Do
+
+Create a project to track song information for a record company. 
+
+The songs should be grouped by genre. Let's say Rock, Jazz, Blues and  Dubstep. Yes, you will need to create directories for each genre.
+
+Create between one and four files in these directories, using ``touch``, where each file will contain the following infomation about one song.
+
+> Title, Song Duration (Minutes), Price (dollars), Artist Name.
+
+Use ``mv`` to move a song file from Rock to some other directory. 
+
+Use ``cp`` followed by ``rm`` to move a file from Dubstep to Blues.
+
+Change into each directory and use ``ls`` and ``ls -al`` to view all the files in the directory.
+
+Change into the root directory and use ``ls -alR`` to view all the files in the project.
+
+For each of the above commands, (mv, cp, rm, touch), perform the equivalent in Sublime.
+
 ### References
 
 [Teaching Unix](http://www.ee.surrey.ac.uk/Teaching/Unix/)
