@@ -10,10 +10,7 @@
 
 ## Overview
 
-First a little story. We'll get around to the technical parts in a bit. But, I've found that all good projects start with a story. In fact, they can actually turn into a story of epic proportions over time. 
-
-We won't make this an epic, we only have twelve weeks here.
-
+First a little story. We'll get around to the technical parts in a bit. But, I've found that all good start with a story. In fact, they can actually turn into a story of epic proportions over time. We won't make this an epic, we only have twelve weeks here.
 
 A couple of years ago I bumped into an old schoolmate of mine, Morty. Now Morty was kind of a hardware geek. I mean stuff in hardware stores like nails, saws, electrical fixtures, ya know.
 
@@ -60,12 +57,12 @@ Now let's get onto the job of helping Morty out.
 >>"Lawn and Garden", Plumbing, Electrical, Tools and
 Hardware.*
 
-> Ok, lets first create a project that you Marty are going to work in and own. Guess I'm out of here in about 25 minutes.
+> Ok, lets first create a project that you Marty are going to work in and own. I'm out of here in about 25 minutes.
 
 
 ### Open up the terminal.
 
-This will  to get a command line interface(CLI) we can work in. Typing Unix commands and viewing our project.
+This will bring up the command line interface (CLI) we can work in. We'll be typing Unix commands and viewing our project.
 
 > We can click in the hour glass in the upper-right side of window, in the menu up there. Then type terminal and hit return.
 
@@ -93,7 +90,7 @@ $ pwd
 ```
 
 ##### Definition: Absolute path
-An absolute path shows one the location of the files and directories with the system's file system. 
+An absolute path shows the location of the files and directories with the system's file system. 
 
 Absolute paths:  
 
@@ -101,7 +98,7 @@ Absolute paths:
 * Are relative to the root directory of the file system.
 
 ##### Definition: Root directory
-Is the top level directory in the tree structure of the filesystem. This can be the root directory of your project of the entire **file system**.
+Is the top level directory in the tree structure that makes up your project or the **file system**.
 
 > Open up the Finder and go to the root directory of your filesystem.
 
@@ -116,7 +113,7 @@ Is the top level directory in the tree structure of the filesystem. This can be 
 $ mkdir MortStore
 ```
 
-> This will make a directory named "MortStore" in my home directory. See mkdir is "make directory", amazing!
+> This will make a directory named "MortStore" in my home directory. See **mkdir is make directory**, amazing!
 
 > Lets change into the "root", or top directory of your project. **Not the root of the filesystem, the root of this new project**.
 
@@ -124,7 +121,7 @@ $ mkdir MortStore
 $ cd MortStore
 ```
 
-> This will **change directory, cd,** into the MortStore directory. This will hold all the files and such for your project.
+> This will **change directory, cd** into the MortStore directory. This directory will hold all the files and such for your project.
 
 > Let's see what the contents of this directory are.
 
@@ -141,7 +138,7 @@ $ touch README
 
 > This will **create an empty file, touch** that will be named README if one doesn't already  exist.
 
-> Let's look all files our project, only the empty README right now.
+> Let's look at all the files our project, only the empty README right now.
 
 ```bash
 $ ls
@@ -149,7 +146,7 @@ README
 $ ls -l
 -rw-r--r--  1 tdyer  staff  0 Sep 25 01:55 README
 ```
-> 'ls -l' will **list, ls** the contents of the current directory in "long" form. 
+> **ls -l will list** the contents of the current directory in "long" form. 
 > 
 > It shows the permissions to the files and directories, *-rw-r--r--*. Followed by number of links, *1*, the owner name, *tdyer* , the group name, *staff* , the number of bytes in file, *0* and the last modified date/time.
 
@@ -168,11 +165,11 @@ $ subl .
 
 > This will open the Sublime Text Editor for the  project in this current directory. 
 
-##### Definition: The The dot, '.', and dotdot, '..', directory.
+##### Definition: The The dot, '.' and dotdot, '..' directory.
 Notice that when we view the contents of this directory with **ls -al** we view all the files, including hidden files.
 The dot directory is just another way to refer to the current directory and the dotdot directory is another way to refer to the current directory's parent directory.
 
-> Add the below text to to the README file and save it using Sublime and save it.
+> Add the below text to to the README file and save it using Sublime.
 
 ```
 Morty's Hardware
@@ -192,7 +189,7 @@ $ ls -l
 -rw-r--r--  1 tdyer  staff  306 Sep 25 02:18 README
 $ cat README
 ```
-> cat will print the contents of the file README. This is just to check that you modified the right file in Sublime. *Sometimes we get confused about which file we're editing*.
+> **cat will print the contents of the file** README. This is just to check that you modified the right file in Sublime. *Sometimes we get confused about which file we're editing*.
 
 > Create subdirectories for each department.
 
@@ -215,11 +212,11 @@ $ ls -lR
 
 > Determine that the view your seeing from ls -lR EXACTLY matches with the view of your project your seeing in Sublime.
 
-> In Sublime create a file that will track the inventory for each department.
+> In Sublime, create a file that will track the inventory for each department.
 
 > The files will be named inventory.txt and there contents will be a comma seperated file (CSV) in each department's directory.
 
-> In LawnGarden/inventory.csv
+> In LawnGarden/inventory.csv add:
 
 ```
 Item,ProdNum,Quantity,Price,Sold Per Month
@@ -298,7 +295,7 @@ $ pwd
 $ mv inventory.csv Tools/.
 ```
 
-> We are using the "move" command. The dot after the directory just indicates that the destination file should also be named inventory.csv.
+> We are using the **move** command. The dot after the directory just indicates that the destination file should also be named inventory.csv.
 > 
 > Create a notice.txt file in each directory to communicate with the employees in each department.
 
@@ -310,7 +307,7 @@ $ cp Tools/notice.txt Electrical/.
 $ cp Tools/notice.txt Plumbing/read_this.txt 
 $
 ```
-> Here we using the "copy" unix command, cp. 
+> Here we using the **copy unix command, cp**. 
 
 > Let's create a file that will contain product information. 
 
@@ -318,7 +315,7 @@ $
 touch products.csv
 ```
 
-> Use Sublime to add these, just cut and paste here.
+> Use Sublime to add these products, just cut and paste here.
 ```
 Lawn and Garden - Patio furniture, Hoses, Rakes, Shovels.
 Plumbing - Toilets, Sinks, Tube and Showers, Pipes, Fittings, Solder
@@ -353,7 +350,7 @@ $ pwd (Make sure your in the project root dir)
 $ find . -name '*.csv'
 ```
 
-> "find" is a pretty useful command that will allow one to find a file by name, partial name, modified or creation date. *It has many options that can be it complex but very useful*
+> **find** is a pretty useful command that will allow one to find a file by name, partial name, modified or creation date. *It has many options that can be it complex but very useful*
 
 > This will look for any file that ends in .csv in the current directory and all descendent directories.
 
@@ -381,7 +378,7 @@ $ man cp
 $ man find
 ```
 
-> Just use the manual command to find more info!. You can even.
+> Just use the **manual command, man** to find more info!. You can even.
 > 
 
 ```bash
