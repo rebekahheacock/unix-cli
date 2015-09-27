@@ -311,6 +311,8 @@ $
 ```
 > Here we using the **copy unix command, cp**. 
 
+**Create products file**
+
 > Let's create a file that will contain product information. 
 
 ```bash
