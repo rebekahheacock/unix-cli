@@ -353,8 +353,8 @@ Use whatever system that works for you, Evernote, plain text files (my favorite)
 
 ```
 $ grep -R Tom *
-$ grep -R Tom *.csv
-$ grep -R Tom staff*
+$ grep -R Tom */*.csv
+$ grep -R Tom */staff*
 ```
 
 > I'm using grep to search for Tom. First I'm going to search for Tom in every file recursively in my project using ``grep -R Tom *``. Then I'm going to only look in CSV files. Finally, I'm going to look only in files that start with the characters 'staff'.
@@ -375,13 +375,6 @@ $ find . -name '*.csv'
 > This will look for any file that ends in .csv in the current directory and all descendent directories.
 
 > Look for these files in Sublime using it's file search features.
-
-> We forgot what department Jack Sprat works in. Lets find out.
-
-```bash
-$ pwd (Make sure your in the project root dir)
-$ ack "Jack Sprat"
-```
 
 
 ### Finally
