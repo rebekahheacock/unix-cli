@@ -292,7 +292,7 @@ Meg Brown,978-453-8984,megb@example.com,manager
 
 ```bash
 $ pwd 
-$ mv inventory.csv Tools/.
+$ mv staff.csv Tools/.
 ```
 
 > We are using the **move** command. The dot after the directory just indicates that the destination file should also be named inventory.csv.
