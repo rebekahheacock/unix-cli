@@ -10,19 +10,17 @@
 
 ## Overview
 
-First a little story. We'll get around to the technical parts in a bit. But, I've found that all good start with a story. In fact, they can actually turn into a story of epic proportions over time. We won't make this an epic, we only have twelve weeks here.
+First a little story. We'll get around to the technical parts in a bit. But, I've found that all projects start with a story. In fact, they can actually turn into a story of epic proportions over time. We won't make this an epic, we only have twelve weeks here.
 
 A couple of years ago I bumped into an old schoolmate of mine, Morty. Now Morty was kind of a hardware geek. I mean stuff in hardware stores like nails, saws, electrical fixtures, ya know.
 
-We'll Morty realized an ambition awhile ago, now that he a was a fully grown geek and had saved up a bunch of money from working in the nail factory. Morty went into the hardware store business.
-
-And Morty knew I had had been working with *"the computers"* and thought I might know something about *"the programs"* and *"the internets"*. 
+Morty realized an ambition awhile ago, now that he a was a fully grown geek and had saved up a bunch of money from working in the nail factory. Morty went into the hardware store business. And Morty knew I had had been working with *"the computers"* and thought I might know something about *"the apps"* and *"the internets"*. 
 
 See, Morty kinda lived in 1945 and only begrudgingly picked up these highly technical terms like *"the computers"* and "*the internets"*.
 
 Even though he wasn't happy about it, he read in a highly popular industry journal that hardware store proprietors where now expected to use *"the internets"* and *"the computers"* to maximize profits.
 
-So, upon seeing me he dove right into a campaign to play upon the very sliver of a relationship we had decades ago. He was trying to get me to do some free work for him. *The fool.*
+So, upon seeing me he dove right into a campaign to play upon the very sliver of a relationship we had decades ago. He was trying to get me to do some free work for him.
 
 I told him I could help him out, but he wasn't gonna get much for the price. Of course, he didn't hear that part and just launched into a tirade about how he has structured his store, priced his items organized
 all the bits and hardware bobs.
@@ -30,16 +28,12 @@ all the bits and hardware bobs.
 Now I'm kind of like, whoa slow done Morty let me get the laptop out and we'll sit over on this bench over here. Hey, Morty you got about thirty minutes of a highly paid software developer's time for nothing
 so let's go through this in a highly ordered and structured way, *you pain in the butt you*.
 
-BTW, I never really liked Morty after that time he shook my hand with a fully charged capacitor and shocked and sent me flying across the school yard. 
+BTW, I never really liked Morty after that time he shook my hand with a fully charged capacitor that sent me flying across the school yard. 
 
-*I really screw this little project up royally, huh? Payback.*
+*I really should screw this little project up royally, huh? Payback.*
 
-Ok Mort. What you're getting for nothing is a project that contains a set of files that are important to your business. We'll organize them in a way that, hopefully, will make sense for your business. 
-
-You'll be able to easily locate, organize, capture and generally manage the information that relates to your
-business.
-
-No web applications, I charge a lot of money to people I sometimes like for that service. And you aren't paying me and, ahh, do remember that time I went flying across the school yard?
+Ok Mort. What you're getting for nothing is a project that contains a set of files that are important to your business. We'll organize them in a way that, hopefully, will make sense for your business. You'll be able to easily locate, organize, capture and generally manage the information that relates to your
+business. No web applications, I charge a lot of money to people I sometimes like for that service. And you aren't paying me and, ahh, do remember that time I went flying across the school yard?
 
 First Morty, **no, no stop talking Morty**, wait, wait the clock is ticking here. I'm going to ask you a set of targeted questions about your **business domain**, the hardware stores, and you're going to answer
 in the breif way.
@@ -90,7 +84,7 @@ $ pwd
 ```
 
 ##### Definition: Absolute path
-An absolute path shows the location of the files and directories with the system's file system. 
+An absolute path shows the location of the files and directories within the system's file system. 
 
 Absolute paths:  
 
@@ -128,7 +122,7 @@ $ cd MortStore
 ```bash
 $ ls
 ```
-> This will **list, ls** all the files and subdirectories in the MortStore directory. None yet.
+> This will **list, ls,** all the files and subdirectories in the MortStore directory. None yet.
 
 > Let's create a README file that will be a high level description of this project.
 
@@ -136,7 +130,7 @@ $ ls
 $ touch README
 ```
 
-> This will **create an empty file, touch** that will be named README if one doesn't already  exist.
+> This will **create an empty file, using touch, ** that will be named README if one doesn't already  exist.
 
 > Let's look at all the files our project, only the empty README right now.
 
@@ -191,6 +185,8 @@ $ cat README
 ```
 > **cat will print the contents of the file** README. This is just to check that you modified the right file in Sublime. *Sometimes we get confused about which file we're editing*.
 
+**Create department directories.**
+
 > Create subdirectories for each department.
 
 ```bash
@@ -211,6 +207,8 @@ $ ls -lR
     all the files and subdirectories of the current directory.
 
 > Determine that the view your seeing from ls -lR EXACTLY matches with the view of your project your seeing in Sublime.
+
+**Create inventory files.**
 
 > In Sublime, create a file that will track the inventory for each department.
 
@@ -251,6 +249,8 @@ Hand Saw,10,9,77.99,2
 Drill,11,67,34.99,15
 Wet Vac,12,2,114.50,0.1
 ```
+
+**Create department staff files.**
 
 > Now create a file in each directory that will capture the current employees working in each department.
 
@@ -296,7 +296,9 @@ $ mv inventory.csv Tools/.
 ```
 
 > We are using the **move** command. The dot after the directory just indicates that the destination file should also be named inventory.csv.
-> 
+
+**Create department notice files.**
+
 > Create a notice.txt file in each directory to communicate with the employees in each department.
 
 ```bash
@@ -333,15 +335,31 @@ rm products.csv
 
 ## You Do
 
-Create a cheat sheet of the unix commands that we've used so far. 
+Create a cheat sheet of the unix commands that we've used so far. *I like to these kinds of files for reference.*
 
 I want each of you to describe each command **in your own words**. Don't just cut and paste from some definition on the web!
 
-Use whatever works for you, Evernote, plain text files (my favorite), tatoos, whatever.
+Use whatever system that works for you, Evernote, plain text files (my favorite), tatoos, whatever.
 
 **Show the final version to an instructor or DIR**
 
 ## We do
+
+**Search for a term**
+
+> I'm looking for the phone number for an employee named Tom. I'm not sure what his last name is or what department he works in?
+
+```
+$ grep -R Tom *
+$ grep -R Tom *.csv
+$ grep -R Tom staff*
+```
+
+> I'm using grep to search for Tom. First I'm going to search for Tom in every file recursively in my project using ``grep -R Tom *``. Then I'm going to only look in CSV files. Finally, I'm going to look only in files that start with the characters 'staff'.
+> 
+> Notice the '*'. This is something called a Regular Expression, aka regex. You can think of it as a kind of wild card. *We'll learn more about this later.*
+
+**Search for a file**
 
 > Ok now I want to find all the staff CSV files in my project.
 
@@ -391,9 +409,12 @@ Create a project to track song information for a record company.
 
 The songs should be grouped by genre. Let's say Rock, Jazz, Blues and  Dubstep. Yes, you will need to create directories for each genre.
 
-Create between one and four files in these directories, using ``touch``, where each file will contain the following infomation about one song.
+Create between one and four files in these directories, using ``touch``, where each file will contain the following infomation about one song. 
 
 > Title, Song Duration (Minutes), Price (dollars), Artist Name.
+
+Create a couple of songs in each file.
+
 
 Use ``mv`` to move a song file from Rock to some other directory. 
 
@@ -403,7 +424,7 @@ Change into each directory and use ``ls`` and ``ls -al`` to view all the files i
 
 Change into the root directory and use ``ls -alR`` to view all the files in the project.
 
-For each of the above commands, (mv, cp, rm, touch), perform the equivalent in Sublime.
+For each of the above commands, (mv, cp, rm, touch), perform the equivalent operation in Sublime.
 
 ### References
 
