@@ -1,0 +1,4 @@
+Item,ProdNum,Quantity,Price,Sold Per Month
+Washer, 22, 6654, 0.01, 1024
+Bolt, 23, 3455, 0.03, 778
+Screw, 24, 5566, 0.02, 444
